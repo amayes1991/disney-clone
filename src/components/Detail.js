@@ -108,7 +108,7 @@ img{
     width:100%;
     transform: scaleY(1);
     object-fit: cover;
-    ${'' /* outline: 40px solid rgba(100,100,100, .1);  */}
+  
     box-shadow: 0 0 8px 8px #040714;
 }
 `
