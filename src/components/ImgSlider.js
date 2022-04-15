@@ -19,11 +19,15 @@ function ImgSlider() {
 
   return (
     <Carousel {...settings}>
+
    <Wrap >
 <img src="/images/slider-badging.jpg"/>
    </Wrap>
    <Wrap >
 <img src="/images/slider-badag.jpg"/>
+   </Wrap>
+   <Wrap>
+       <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/51BA6DC1435E904C9A36BEC57BFBA797D9E59CC812EA855821CBB58EC9329BD6/compose?width=1440&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim" />
    </Wrap>
     </Carousel>
   )
@@ -33,6 +37,11 @@ export default ImgSlider
 
 const Carousel = styled(Slider)`
 margin-top:20px;
+
+.slick-dots{
+    right:-40% !important;
+    bottom: 15px;
+}
 
 ul li button {
     &:before {
@@ -49,22 +58,26 @@ li.slick-active button::before {
     overflow: visible;
 }
 
+}
 button {
-    z-index: 1
+    z-index: -1;
 }
 `
 const Wrap = styled.div`
 cursor: pointer;
+padding: 10px;
+z-index:-1;
 img{
-    border: 4px solid transparent;
+
     border-radius: 4px;
     width:100%;
     height:100%;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 69%) 0px 16px 10px -10px;
     transition-duration: 300ms;
 
+
 &:hover {
-    border: 4px solid rgba(249, 249,249, 0.8);
+    outline: 4px solid rgba(249, 249,249, 0.8);
 }
 }
 `

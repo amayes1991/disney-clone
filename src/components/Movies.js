@@ -85,6 +85,7 @@ border-radius: 10px;
 overflow:hidden;
 border: 4px solid transparent;
 
+
 img{
     width:100%;
     height: 100%;
@@ -94,7 +95,7 @@ img{
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.02);
         outline: 4px solid rgba(249,249,249, 0.9); 
         box-shadow: rgb(0 0 0 / 90%) 0px 30px 20px -10px;
     }

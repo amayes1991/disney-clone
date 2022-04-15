@@ -22,7 +22,7 @@ export default Login
 
 const Container = styled.div`
 position: relative;
-min-height: calc(100vh - 70px);
+min-height: calc(100vh);
 display:flex;
 align-items:top;
 justify-content: center;

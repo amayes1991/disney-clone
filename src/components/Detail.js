@@ -27,7 +27,7 @@ function Detail() {
      
             }
          })
-    }, [])
+    })
 
 
     const {backgroundImg, titleImg, desc, subtitle, genre} = movie;
@@ -43,6 +43,7 @@ console.log(backgroundImg)
         </ImageTitle>
         <Subsection>
         <SubTitle>
+        {/* <img style={{width: '14px', height: '15px', marginRight: '10px'}} src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FAE63AC7AC11C27C949E1856CF188BF09FC20EA52AEA3B65B43C24EEB5F29BFD/scale?width=240" /> */}
     {subtitle}
 </SubTitle>
 <Genre>
@@ -57,7 +58,6 @@ console.log(backgroundImg)
 
         </PlayButton>
         <TrailerButton>
-        <img src="/images/play-icon-white.png" />
         <span>Trailer</span>
         </TrailerButton>
         <AddButton>
@@ -85,6 +85,7 @@ const Container = styled.div`
 min-height: calc(100vh -70px);
 padding: 0 calc(3.5vw + 5px);
 position: relative;
+overflow: hidden;
 `
 const Genre = styled.div`
 font-size: 13px;
@@ -108,7 +109,6 @@ img{
     width:100%;
     transform: scaleY(1);
     object-fit: cover;
-    ${'' /* outline: 40px solid rgba(100,100,100, .1);  */}
     box-shadow: 0 0 8px 8px #040714;
 }
 `

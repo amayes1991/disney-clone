@@ -64,13 +64,14 @@ function Header() {
     console.log(userLogin)
   return (
     <Nav>
-    <Logo src="/images/logo.svg" />
+    <Logo src="/images/logo.svg"/>
     { !isLoggedIn ?
    ( <LoginContainer>
     <Login onClick={signIn}>Login</Login>
     </LoginContainer>)
   :
     <>
+
     <NavMenu>
     <a href='/home'><img src = "/images/home-icon.svg" /> <span>HOME</span></a>
     <a><img src = "/images/search-icon.svg" /> <span>SEARCH</span></a>
@@ -97,6 +98,10 @@ display: flex;
 align-items: center;
 padding: 0 36px;
 overflow-x: hidden;
+
+a{
+    cursor: pointer;
+}
 `
 
 const Logo = styled.img`

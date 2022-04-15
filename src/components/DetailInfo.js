@@ -35,7 +35,7 @@ function DetailInfo() {
     {movies && movies.map((movie)=>{
         return(
         <Wrap key={movie.id}>
-<Link to={`/detail2/${movie.id}`}>
+<Link to={`/detail/${movie.id}`}>
 <img src={movie.cardImg} /> 
 </Link>
    
@@ -64,13 +64,13 @@ transition:all 0.2s ease 0s;
 h2{
     border-bottom: 2px solid white;
     padding-bottom: 9px;
-    ${'' /* text-decoration: underline; */}
     margin: 20px;
     cursor:pointer;
 
 }
 `
 const Carousel = styled(Slider)`
+
 .slick-list{
     overflow: visible;  
 }
@@ -105,7 +105,7 @@ img{
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.01);
         outline: 4px solid rgba(249,249,249, 0.9); 
         box-shadow: rgb(0 0 0 / 90%) 0px 30px 20px -10px;
     }
